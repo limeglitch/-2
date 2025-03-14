@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد منطاوي - المحامي</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            color: darkorange;
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 22px;
+            margin: 10px 0;
+            color: gray;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            display: block;
+            background: darkred;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 300px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: darkorange;
+        }
+        .curtain {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: black;
+            z-index: 10;
+            animation: openCurtain 2s forwards;
+        }
+        @keyframes openCurtain {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+        .moving-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: yellow;
+            position: absolute;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="curtain"></div>
+    <div class="moving-text">✨ رمضان كريم عليكم جميعًا | المحامي محمد منطاوي ✨</div>
+    <div class="container">
+        <img class="logo" src="https://i.postimg.cc/t44zXm51/IMG-20250209-WA0107.jpg" alt="لوجو محمد منطاوي">
+        <h1 class="title">محمد منطاوي - المحامي</h1>
+        <p class="info">عضو مجلس القاهرة الجديدة</p>
+        <p class="info">📍 العنوان: 4 شارع عبدالرازق السنهوري - مدينة نصر</p>
+        <p class="info">📍 2 شارع العقاد - المطرية - القاهرة</p>
+        <p class="info">📞 للتواصل: 01006800325</p>
+        
+        <div class="buttons">
+            <a class="btn" href="https://wa.me/01006800325">💬 واتساب</a>
+            <a class="btn" href="tel:01006800325">📞 اتصل بنا</a>
+            <a class="btn" href="https://mohamedmantawe.github.io/MohamedMantawe/">🌐 الموقع الرسمي</a>
+            <a class="btn" href="https://www.facebook.com/groups/2000151897145141/?ref=share&mibextid=NSMWBT">📘 جروب فيسبوك</a>
+            <a class="btn" href="https://x.com/YouthEgypt23826?t=TSNgFwJrjYgpCspgbT7mRg&s=09">🐦 تويتر</a>
+        </div>
+        
+        <p class="info">🌙 رمضان كريم عليكم 🌙</p>
+    </div>
+</body>
+</html>

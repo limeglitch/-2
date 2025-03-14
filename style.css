@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(-45deg, #1e1e1e, #0077b6, #00aaff, #121212);
+    background-size: 400% 400%;
+    animation: gradientBG 6s ease infinite alternate;
+    color: white;
+}
+
+/* تأثير الخلفية المتغيرة */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.hero {
+    padding: 80px 20px;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    animation: pulse 3s infinite alternate;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    animation: pulseColor 3s infinite alternate;
+}
+
+.call-btn {
+    background: #28a745;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* تأثير النبض على الألوان */
+@keyframes pulseColor {
+    0% { background-color: #00aaff; }
+    100% { background-color: #ff5733; }
+}
+
+.info, .links {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f8f8f8;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.link {
+    display: block;
+    margin: 12px 0;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00c3ff;
+    transition: all 0.3s ease;
+    animation: pulseColor 3s infinite alternate;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* تأثير ظهور سلس */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* تأثير النبض على العناوين */
+@keyframes pulse {
+    0% { transform: scale(1); color: #ffffff; }
+    100% { transform: scale(1.1); color: #00aaff; }
+}
